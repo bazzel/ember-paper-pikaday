@@ -16,3 +16,14 @@
 	yearRange="1900,currentYear"
 	onChange=(action (mut date))
 }}
+
+<br> <br>
+
+{{paper-pikaday
+	value=myDate
+	label="value not formatted correctly after initial rendering"
+	class="layout-fill flex-50"
+	yearRange="1900,currentYear"
+	format="ddd, MMM Do, YYYY"
+	onChange=(action (mut myDate))
+}}
